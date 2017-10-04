@@ -5,3 +5,5 @@ set(LUMIX_INCLUDE
         CACHE STRING "Main Lumix Enigne Source Dir")
 
 add_subdirectory(engine)
+add_subdirectory(editor)
+add_subdirectory(studio)

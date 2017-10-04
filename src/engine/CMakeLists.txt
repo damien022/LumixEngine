@@ -1,5 +1,11 @@
 message(STATUS "==== Engine ====")
 
+SET(LUMIX_ENGINE_INCLUDE
+        ${LUMIX_INCLUDE}
+        ${LUA_INCLUDE}
+        ${IMGUI_INCLUDE}
+        CACHE INTERNAL "Lumix Engine Include")
+
 include_directories(
         ${LUMIX_INCLUDE}
         ${LUA_INCLUDE}
@@ -100,6 +106,7 @@ set(SOURCE_FILES
         fs/tcp_file_device.h
         fs/tcp_file_server.cpp
         fs/tcp_file_server.h
+        fs/linux/os_file.cpp
         linux/fibers.cpp
         linux/input_system.cpp
         linux/network.cpp
